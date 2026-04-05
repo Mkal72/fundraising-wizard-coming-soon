@@ -1,6 +1,16 @@
 {
   "buildCommand": null,
   "outputDirectory": ".",
+  "rewrites": [
+    {
+      "source": "/blog",
+      "destination": "https://blog.fundraisingwizard.com/blog"
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "https://blog.fundraisingwizard.com/blog/:path*"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
